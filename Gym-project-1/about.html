@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness club</title>
+    <link rel="stylesheet" href="Project/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+    /* CSS Reset */
+    body{
+        /* for whole website */
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym.png.webp');
+        font-family: "Trirong", serif;
+        
+    }
+    .left{
+        /* for logo */
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left:50px;
+        top: 20px;
+    }
+    .left img{
+        /* logo image */
+        width: 60px;
+        filter: invert(100%)
+        
+    }
+    .left div{
+        /* logo text */
+        line-height: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .mid{
+        /* navigation bar */
+        display: block;
+        width: 50%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        /* buttons */
+        position: absolute;
+        right:34px;
+        top: 40px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    
+    .navbar li{
+        /* text in navbar */
+        color: white;
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover{
+        /* when u move cursor to button it will change color by hover
+        and active is to curently open item will be colored */
+        text-decoration: underline;
+        color: gray;
+    }
+    /* .navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    } */
+    
+    .btn{
+        /* buttons CSS */
+        font-family: "Trirong", serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray ;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+    .btn:hover{
+        background-color: rgb(31, 30, 30);
+    }
+
+    /* Container: create for the website data */
+    .container{
+        border: 2px solid white;
+        margin: 70px 60px;
+        padding: 30px;
+        width: 35%;
+        border-radius: 26px;
+    }
+
+    .container h1{
+        /* heading of container box */
+    
+       font-size: 25px ;
+    }
+   
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+           <img src="img/bgg.png.png" alt="">
+           <div>Fitness Clubs</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <!-- Container class this made for form/data in website -->
+    <!-- here no noaction.php is just an imaginary backend where data are safed 
+    for this website currently we have no backend -->
+    <div class="container">
+        <!-- Box/Form Heading -->
+        <h1>About</h1>
+        <!-- To enter form deatial boxes -->
+       <p>INFORMATION ABOUT US</p>
+        <!-- <p>Fitness Culb</p>  -->
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <ul>
+         <li>MEN FITNESS AND WORKOUT</li> 
+         <li>WOMEN FITNESS AND WORKOUT</li> 
+         <li>PERSONAL TRAININGS</li> 
+        </ul>
+    </div>
+</body>
+</html>
